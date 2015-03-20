@@ -1,0 +1,185 @@
+@mixin bor-rig{border-right:1px solid $iron;}
+@mixin bor-lef{border-left:1px solid $iron;}
+@mixin borders{border-right:1px solid $iron; border-left:1px solid $iron; border-top:1px solid $iron; border-bottom:1px solid $iron;}
+@mixin txts{font-weight:bold; text-transform:uppercase;}
+@mixin lis{list-style-type:none;
+	   display:inline;
+	   margin-right:1rem;}
+@mixin images-size{
+	p{ padding:0.3rem;}
+	img {
+			height:8rem;
+			width:16rem;
+			padding:0.5rem;
+		}
+			
+		   }
+
+h1,h2,h4{
+	@include txts;
+	padding:0rem; 
+	margin-top:0;
+	margin-left:0.4rem; 
+	margin-top:0.2rem;
+				}
+							
+h3{ 
+	@include txts;
+	margin-left:0.5rem; 
+	margin-top:0.2rem; 
+	margin-bottom:-0.5rem;
+	}
+			
+p{
+	margin-top:0.2rem;
+	margin-bottom:-0.3rem;
+   }
+
+a{	margin-top:0.1rem;
+	font-weight:bold; 
+	padding:0rem; 
+	margin-top:0;
+  }
+
+span{padding:0.4rem;}
+
+.column, .columns {padding:0rem !important;}
+
+ul{
+	padding-top:0.7rem;
+	li{
+	   @include lis;
+	   a{
+		color:$black;
+		}
+	   }
+   }
+
+.social{img{width:2rem;}
+	margin-left: 1rem;display:inline;
+    padding-top: 0.8rem;
+    padding-right:0.2rem;
+	float:right;}
+	
+.hp{margin-top:-0.031rem;}
+
+.top-bar ul{
+			li>a{
+				  color:$white;
+				  }
+			   }
+			
+			
+.main, .box{
+	@include borders;
+	}
+
+
+.nav {
+	@extend .main;
+	height:2rem;
+	ul   { margin-top:-0.3rem;
+		  li     {
+			margin-right:2rem;
+                 }
+		
+			}
+		}
+		
+.right>h4{
+          padding:0.5rem;
+		  padding-bottom:0.2rem;
+		  }
+		  
+		  
+		  
+.big-pic {
+			margin-top:0.1rem;
+			img		{
+					 height:8.6rem;
+					 width:99.5%;
+					 }
+			}
+
+.lil-pic img{
+				height:8rem;
+				padding-top:0.1rem;
+				padding-bottom:0.1rem;
+				padding-right:0.1rem;
+			  }
+
+.images{padding-left:0.2rem;}
+
+.small-left{
+			padding:0.4rem;
+			p{width:90%;}
+			h4{
+				margin-bottom:0.1rem;
+				}
+			img{
+				padding:0.2rem;
+				height:6rem;
+				width:11rem;
+				}
+			}
+
+.left-box{border-right:1px solid #ccc;}
+
+
+
+
+.contents{
+	@include images-size;
+	@include borders;
+		}
+		   
+.img-txt{@include images-size;
+	img	{
+		 width:99%;
+		 height:5rem;
+		 }
+		 }
+
+.img-txt-large{
+	height:3.5rem;
+	img{
+		width:100%;
+		height:22%;
+		padding:0.5rem;
+		}
+	p{padding:0.2rem;}
+			   }
+
+
+.right-box{ 
+	margin-top:0rem;margin-left:-0.6rem;
+	h4{
+	   margin-top:-0.3rem;
+	   }
+			}
+			
+li.tab-title{
+	margin:0;
+	padding:0rem 0rem;
+			}
+
+.tabs-content{margin-bottom:-0.7rem; margin-top:-1.2rem;}
+
+ul.tabs{margin-bottom:0.2rem;margin-top:-0.7rem;}
+
+.inline-pic{padding:0.7rem;
+@include bor-lef;
+img{height:7rem; width:98%;}
+}
+
+.middle{
+	img{height:13rem; width: 100%;}
+		}
+		
+.only-imgs{img{padding:0.2rem;
+margin-top:0.2rem;}}
+
+.line-right{@include bor-rig;}
+.right-box{@include bor-lef}
+
+
