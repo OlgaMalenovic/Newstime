@@ -1,19 +1,38 @@
 @mixin bor-rig{border-right:1px solid $iron;}
+
 @mixin bor-lef{border-left:1px solid $iron;}
-@mixin borders{border-right:1px solid $iron; border-left:1px solid $iron; border-top:1px solid $iron; border-bottom:1px solid $iron;}
-@mixin txts{font-weight:bold; text-transform:uppercase;}
-@mixin lis{list-style-type:none;
+
+@mixin borders{
+	border-right:1px solid $iron; 
+	border-left:1px solid $iron; 
+	border-top:1px solid $iron; 
+	border-bottom:1px solid $iron;
+				}
+				
+@mixin txts{
+	font-weight:bold; 
+	text-transform:uppercase;
+			}
+			
+@mixin lis{
+	   list-style-type:none;
 	   display:inline;
 	   margin-right:1rem;}
+	
 @mixin images-size{
 	p{ padding:0.3rem;}
 	img {
-			height:8rem;
+			height:8.5rem;
 			width:16rem;
 			padding:0.5rem;
 		}
 			
 		   }
+
+#panel11 img{
+	padding:0.2rem;
+	width:100%;
+			}
 
 h1,h2,h4{
 	@include txts;
@@ -43,7 +62,9 @@ a{	margin-top:0.1rem;
 
 span{padding:0.4rem;}
 
-.column, .columns {padding:0rem !important;}
+.column, .columns {
+	padding:0rem !important;
+					}
 
 ul{
 	padding-top:0.7rem;
@@ -55,9 +76,12 @@ ul{
 	   }
    }
 
-.social{img{width:2rem;}
-	margin-left: 1rem;display:inline;
-    padding-top: 0.8rem;
+.social{
+	img    {
+			width:1.5rem;
+		    }
+	margin-left: 0.6rem;display:inline;
+    padding-top: 0.3rem;
     padding-right:0.2rem;
 	float:right;}
 	
@@ -91,8 +115,6 @@ ul{
 		  padding-bottom:0.2rem;
 		  }
 		  
-		  
-		  
 .big-pic {
 			margin-top:0.1rem;
 			img		{
@@ -103,6 +125,7 @@ ul{
 
 .lil-pic img{
 				height:8rem;
+				width:100%;
 				padding-top:0.1rem;
 				padding-bottom:0.1rem;
 				padding-right:0.1rem;
@@ -112,20 +135,18 @@ ul{
 
 .small-left{
 			padding:0.4rem;
-			p{width:90%;}
+			p  {width:90%;}
 			h4{
 				margin-bottom:0.1rem;
 				}
 			img{
 				padding:0.2rem;
-				height:6rem;
-				width:11rem;
+				height:5rem;
+				width:98%;
 				}
 			}
 
 .left-box{border-right:1px solid #ccc;}
-
-
 
 
 .contents{
@@ -133,22 +154,12 @@ ul{
 	@include borders;
 		}
 		   
-.img-txt{@include images-size;
+.img-txt-large{@include images-size;
 	img	{
 		 width:99%;
-		 height:5rem;
+		 max-height:5rem;
 		 }
 		 }
-
-.img-txt-large{
-	height:3.5rem;
-	img{
-		width:100%;
-		height:22%;
-		padding:0.5rem;
-		}
-	p{padding:0.2rem;}
-			   }
 
 
 .right-box{ 
@@ -163,23 +174,45 @@ li.tab-title{
 	padding:0rem 0rem;
 			}
 
-.tabs-content{margin-bottom:-0.7rem; margin-top:-1.2rem;}
+.tabs-content{
+	margin-bottom:-0.7rem; 
+	margin-top:-1.2rem;
+				}
 
-ul.tabs{margin-bottom:0.2rem;margin-top:-0.7rem;}
-
-.inline-pic{padding:0.7rem;
-@include bor-lef;
-img{height:7rem; width:98%;}
-}
-
-.middle{
-	img{height:13rem; width: 100%;}
+ul.tabs{
+	margin-bottom:0.2rem;
+	margin-top:-0.7rem;
 		}
 		
-.only-imgs{img{padding:0.2rem;
-margin-top:0.2rem;}}
+ul.tabs{
+	margin-bottom:0.2rem;	
+	margin-top:-0.7rem;
+	}
+
+.inline-pic{
+	padding:0.7rem;
+	@include bor-lef;
+	img{
+		height:7rem; width:98%;
+		}
+			}
+
+.middle{
+	height:20%;
+	img{
+		height:90%; width: 100%;
+		}
+		}
+		
+.only-imgs{
+	img{
+	padding:0.2rem;
+	margin-top:0.2rem;
+		}
+			}
 
 .line-right{@include bor-rig;}
+
 .right-box{@include bor-lef}
 
 
